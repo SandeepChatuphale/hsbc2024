@@ -1,0 +1,68 @@
+ Source File Declaration Rules
+============================
+ ■ There can be only one public class per source code file.
+ ■ Comments can appear at the beginning or end of any line in the source code 
+file; they are independent of any of the positioning rules discussed here.
+ ■ If there is a public class in a file, the name of the file must match the name 
+of the public class. For example, a class declared as public class Dog { } 
+must be in a source code file named Dog.java.
+ ■ If the class is part of a package, the package statement must be the first line 
+in the source code file, before any import statements that may be present.
+ ■ If there are import statements, they must go between the package statement 
+(if there is one) and the class declaration. If there isn't a package statement, 
+then the import statement(s) must be the first line(s) in the source code file. 
+If there are no package or import statements, the class declaration must be 
+the first line in the source code file. 
+■ import and package statements apply to all classes within a source code file. 
+In other words, there's no way to declare multiple classes in a file and have 
+them in different packages, or use different imports.
+ ■ A file can have more than one nonpublic class.
+ ■ Files with no public classes can have a name that does not match any of the 
+classes in the file
+
+
+Legal Identifiers
+=====================
+■ Identifiers must start with a letter, a currency character ($), or a connecting 
+character such as the underscore ( _ ). Identifiers cannot start with a number!
+ ■ After the first character, identifiers can contain any combination of letters, 
+currency characters, connecting characters, or numbers.
+ ■ In practice, there is no limit to the number of characters an identifier can 
+contain.
+ ■ You can't use a Java keyword as an identifier.
+ ■ Identifiers in Java are case-sensitive; foo and FOO are two different identifiers.
+
+
+
+Convention
+========================================
+ Classes and interfaces The first letter should be capitalized, and if several 
+words are linked together to form the name, the first letter of the inner words 
+should be uppercase (a format that's sometimes called "camelCase"). For 
+classes, the names should typically be nouns. For example: 
+Dog 
+Account
+ PrintWriter
+ For interfaces, the names should typically be adjectives like
+ Runnable
+ Serializable
+
+ ■ Methods The first letter should be lowercase, and then normal camelCase 
+rules should be used. 
+In addition, the names should typically be verb-noun pairs. 
+For example:
+ getBalance
+ doCalculation
+ setCustomerName
+
+
+ ■ Variables Like methods, the camelCase format should be used, starting with 
+a lowercase letter. Sun recommends short, meaningful names, which sounds 
+good to us. Some examples:
+ buttonWidth
+ accountBalance
+ myString
+ ■ Constants Java constants are created by marking variables static and 
+final. They should be named using uppercase letters with underscore 
+characters as separators:
+ MIN_HEIGHT
