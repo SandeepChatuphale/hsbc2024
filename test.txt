@@ -1,0 +1,1636 @@
+Q1)  Given:
+ 3. public class Dark {
+ 4. int x = 3;
+ 5. public static void main(String[] args) {
+ 6. new Dark().go1();
+ 7. }
+ 8. void go1() {
+ 9. int x;
+10. go2(++x);
+11. }
+12. void go2(int y) {
+13. int x = ++y;
+14. System.out.println(x);
+15. }
+16. } 
+ What is the result?
+ A. 2
+ B. 3
+ C. 4
+ D. 5
+ E. Compilation fails
+ F. An exception is thrown at runtime
+
+
+
+Q2)  Given:
+ 3.	
+ What is the result?
+ A. 2
+ B. 3
+ C. 4
+ D. 5
+ E. Compilation fails
+ F. An exception is thrown at runtime
+
+
+
+
+Q3). Predict the output after invoking the method doTest, and select
+   the statement which is true.
+   public void doTest(int x) { 
+     int odd = 3;
+     if(odd == 5) /* Line 3 */
+     {
+          System.out.println("odd"); 
+     } 
+     else 
+     {
+          System.out.println("even"); 
+     } 
+   }
+A. Compilation error.
+B. "odd" will always be output.
+C. "even" will always be output.
+D. "odd" will be output for odd values of x, and "even" for even values of x.
+
+
+Q4). Predict the output of the given code snippet and select the statement
+   which is true.
+   class While {  /* Line 1 */
+        public void loop() {
+             int x= 0;
+             while ( 1 ) { /* Line 4 */
+                 System.out.print("x plus one is " + (x + 1)); /* Line 5 */
+             }
+        }
+   }
+A. There is a syntax error on line 1.
+B. There are syntax errors on lines 1 and 4.
+C. There are syntax errors on lines 1, 4, and 5.
+D. There is a syntax error on line 4.
+
+
+Q 5. Predict the output.
+   class Relational {
+       public static void main(String args[]){
+           int var1 = 5; 
+	   int var2 = 6;
+	   System.out.print(var1 > var2);
+       } 
+   }
+A. 1
+B. 0
+C. true
+D. false
+
+
+
+Q 6). Predict the output
+public class Test {
+     public static void main(String[] args) {
+          for(int i = 0 ; i < 10; i++) {			
+	  }		
+	  System.out.println(i);	
+     }	
+}
+A. 9
+B. 10
+C. Compilation Error
+D. Runtime Error
+Q 7). Predict the output
+   public class Test {	
+        public static void main(String[] args) {
+             for(int i = 0; i < 10; i++) {
+	          if(i % 2 == 0)
+		       continue;
+	          System.out.println(i);
+	     }
+        }	
+   }
+A. Code will print all even numbers between 0 to 10
+B. Code will print all odd numbers between 0 to 10
+C. Compilation Error
+D. Runtime Error
+
+Q 8). By using ____________, you can force immediate termination of loop, 
+bypassing the conditional expression and any remaining code in the body of the loop.
+A. switch
+B. continue
+C. break
+D. default
+Q 9). What would be the output of the following code
+    int j=50;
+    while(true) {
+         if(j<10)
+             break;
+	 j=j-10;
+    }
+    System.out.println("j is " +j);
+A. j is 0
+B. j is 50
+C. No output
+D. Program would not terminate
+
+
+Q10)
+public class Test {         
+public static void main(String [] args) {
+ int x = 5;
+ boolean b1 = true;
+ boolean b2 = false;
+ if ((x == 4) && !b2 )
+       System.out.print("1 ");
+         System.out.print("2 ");        
+if ((b2 = true) && b1 )
+ System.out.print("3 ");
+   }
+  }
+
+What is the result?
+ A. 2
+ B. 3
+ C. 1 2
+ D. 2 3
+ E. 1 2 3
+ F. Compilation fails.
+ G. An exception is thrown at runtime.
+
+
+Q11)
+Given: 
+1. class Alligator { 
+2. public static void main(String[] args) { 
+3. int []x[] = {{1,2}, {3,4,5}, {6,7,8,9}}; 
+4. int [][]y = x; 
+5. System.out.println(y[2][1]); 
+	y[2][1] = 20;
+
+6. } 
+7. }
+ What is the result?
+ A. 2 
+B. 3 
+C. 4 
+D. 6 
+E. 7 
+F. Compilation fails. 
+
+
+Q12)
+Given: 
+13. public class Pass { 
+14. public static void main(String [] args) { 
+15. int x = 5; 
+16. Pass p = new Pass(); 
+17. p.doStuff(x); 
+18. System.out.print(" main x = " + x); 
+19. } 
+20. 
+21. void doStuff(int x) { 
+ 22. System.out.print(" doStuff x = " + x++); 
+23. } 
+24. } 
+What is the result?
+
+A. Compilation fails. 
+B. An exception is thrown at runtime. 
+C. doStuff x = 6 main x = 6 
+D. doStuff x = 5 main x = 5 
+E. doStuff x = 5 main x = 6 
+F. doStuff x = 6 main x = 5 
+
+Q13)
+Given: 
+11. public void test(String str) { 
+12. int check = 4; 
+13. if (check == str.length()) { 
+14. System.out.print(str.charAt(check -= 1) +", "); 
+15. } else { 
+16. System.out.print(str.charAt(0) + ", "); 
+17. } 
+18. } 
+and the invocation: 
+21. test("four"); 
+22. test("tee"); 
+23. test("to"); 
+What is the result?
+ A. r, t, t, 
+B. r, e, o, 
+C. Compilation fails. 
+D. An exception is thrown at runtime. 
+
+Q14)
+Given: 
+11. public static void main(String[] args) { 
+12. String str = "null"; 
+13. if (str == null) { 
+14. System.out.println("null"); 
+15. } else if(str.length() == 0) { 
+16. System.out.println("zero"); 
+17. } else { 
+18. System.out.println("some"); 
+19. } 
+20. } 
+What is the result?
+ A. null 
+B. zero 
+C. some 
+D. Compilation fails. 
+E. An exception is thrown at runtime. 
+Q15)
+Given: 
+11. public static void main(String[] args) { 
+12. for (int i = 0; i <= 10; i++) { 
+13. if (i > 6) break; 
+14. }
+ 15. System.out.println(i); 
+16. } 
+ What is the result?
+ A. 6 
+B. 7 
+C. 10 
+D. 11 
+E. Compilation fails. 
+F. An exception is thrown at runtime. 
+
+Q16)
+Given: 
+1. public class TestString1 { 
+2. public static void main(String[] args) { 
+3. String str = "420"; 
+ 4. str += 42; 
+5. System.out.print(str);
+ 6. } 
+7. } 
+What is the output?
+ A. 42 
+B. 420 
+C. 462 
+D. 42042 
+E. Compilation fails. 
+F. An exception is thrown at runtime. 
+
+
+17)
+ class Fizz {
+  int x = 5;
+  public static void main(String[] args) {
+    Fizz f1 = new Fizz();
+    Fizz f2 = new Fizz();
+    Fizz f3 = FizzSwitch(f1,f2);
+    System.out.println((f1 == f3) + " " + (f1.x == f3.x));
+  }
+  static Fizz FizzSwitch(Fizz x, Fizz y) {
+    Fizz z = x;
+    z.x = 6;
+    return z;
+ } }
+
+ What is the result?
+ A.  true true
+ B.  false true
+ C.  true false
+ D.  false false
+ E.  Compilation fails
+ F. 
+An exception is thrown at runtime
+
+
+
+
+Q 18)  Given:
+class Top {
+ public Top(String s) { System.out.print("B"); }
+}
+public class Bottom2 extends Top {
+ public Bottom2(String s) { System.out.print("D"); }
+ public static void main(String [] args) {
+ new Bottom2("C");
+ System.out.println(" ");
+} }
+ What is the result?
+ A. BD 
+ B. DB 
+ C. BDC
+ D. DBC
+ E. Compilation fail
+
+Q19)class A{
+	A(String a)
+	{
+		System.out.println("In A()");
+	}
+}
+class B extends A{}
+public class Main
+{
+	public static void main(String args[])
+	{
+		B b = new B();
+	}
+}
+A. In A()
+B. No O/P
+C. Compilation error
+D. Exception
+
+Q20) Predict the output of below Java application
+    class Base {      
+         Base() {        
+              System.out.print("Base");  
+         } 
+    }  
+    public class Alpha extends Base {      
+         public static void main(String[] args) {      
+              new Alpha(); /* Line 8 */    
+              new Base(); /* Line 9 */    
+         }  
+    }
+A. Base
+B. BaseBase
+C. Error at Line 8
+D. Error at Line 9
+
+
+21) Predict the output of below Java application
+    class A {
+         int i;
+	 void display() {
+	      System.out.println(i);
+	 }
+     }    
+     class B extends A {
+	 int j;
+	 void display() {
+	      System.out.println(j);
+	 }
+     }    
+     public class Inheritence {
+          public static void main(String args[])
+	  {
+	            A obj = new B();
+	            obj.i=1;
+	            obj.j=2;   
+	            obj.display();     
+	  }
+     }
+A. 1
+B. 2
+C. Compilation Error
+D. Runtime Error
+
+
+22) Predict the output of below Java application
+    class A {
+         int i;
+	 void display() {
+	      System.out.println(i);
+	 }
+     }    
+     class B extends A {
+	 int j;
+	 void display() {
+	      System.out.println(j);
+	 }
+     }    
+     public class Inheritence {
+          public static void main(String args[])
+	  {
+	            B obj = new B();
+	            obj.i=1;
+	            obj.j=2;   
+	            obj.display();     
+	  }
+     }
+A. 1
+B. 2
+C. Compilation Error
+D. Runtime Error
+
+
+23)
+sealed class Shape permits Circle //line 1
+{	
+}
+final class Circle extends Shape //line 2
+{
+}
+final class Rectangle extends Shape //line 3
+{
+}
+
+A) Compilation Error at line1
+B) Compilation Error at line2
+C) Compilation Error at line3
+D) Compiles fine
+
+
+24)What, if anything, is wrong with the following code? 
+class TestClass implements T1, T2{
+   public void m1(){}
+}
+interface T1{
+   int VALUE = 1;
+   void m1();
+}
+interface T2{
+   int VALUE = 2;
+   void m1();
+}
+a.	TestClass cannot implement them both because it leads to ambiguity.
+b.	There is nothing wrong with the code.
+c.	The code will work fine only if VALUE is removed from one of the interfaces.
+d.	The code will work fine only if m1() is removed from one of the interfaces.
+e.	None of the above.
+
+25)Given:
+public abstract interface Frobnicate { public void twiddle(String s); }
+ Which is a correct class? (Choose all that apply.)
+ A. public abstract class Frob implements Frobnicate { 
+ public abstract void twiddle(String s) { }
+ }
+ B. public abstract class Frob implements Frobnicate { }
+ C. public class Frob extends Frobnicate {
+ public void twiddle(Integer i) { }
+ }
+ D. public class Frob implements Frobnicate {
+ public void twiddle(Integer i) { }
+ }
+ E. public class Frob implements Frobnicate {
+ public void twiddle(String i) { }
+ public void twiddle(Integer s) { }
+
+
+
+
+26. Which of these keyword must be used to inherit a class?
+A. super
+B. this
+C. extent
+D. extends
+
+27)
+Choose an appropriate option from below for the Constructors in Java
+A.  Constructors can be only public
+B.  Constructors can be public and protected but not private
+C.  Constructors can be either public or default but not protected and private
+D.  Constructors can be public, protected, default and also private
+
+
+28) Which is true? (Choose all that apply.)
+ A. "X extends Y" is correct if and only if X is a class and Y is an interface
+ B. "X extends Y" is correct if and only if X is an interface and Y is a class
+ C. "X extends Y" is correct if X and Y are either both classes or both interfaces
+ D. "X extends Y" is correct for all combinations of X and Y being classes and/or interfaces
+
+29) Given:
+ 1. public class Electronic implements Device 
+ { public void doIt() { } }
+ 2.
+ 3. abstract class Phone1 extends Electronic { }
+ 4.
+ 5. abstract class Phone2 extends Electronic 
+ { public void doIt(int x) { } }
+ 6.
+ 7. class Phone3 extends Electronic implements Device 
+ { public void doStuff() { } }
+ 8. 
+ 9. interface Device { public void doIt(); }
+ What is the result? (Choose all that apply.)
+ A. Compilation succeeds
+ B. Compilation fails with an error on line 1
+ C. Compilation fails with an error on line 3
+ D. Compilation fails with an error on line 5
+ E. Compilation fails with an error on line 7
+ F. Compilation fails with an error on line 9
+
+30)
+int x = 0;
+ int y = 10;
+ do {
+    y--;
+    ++x;
+ } while (x < 5);
+ System.out.print(x + "," + y);
+ What is the result?
+ A. 5,6
+ B. 5,5
+ C. 6,5
+ D. 6,6
+
+
+31)
+A Consider the following program...
+
+public class TestClass
+{
+    public int methodA(int a){  return a*2; } //1
+    public long methodA(int a){  return a; } //2
+    public static void main(String[] args)
+    {
+        int i = 0;
+        i = new TestClass().methodA(2);
+        System.out.println( i );
+    }
+}
+a.	Line 2 correctly overrides the method at line 1.
+b.	Line 2 correctly overloads the method at line 1.
+c.	There is neither overloading nor overriding but the program will compile.
+d.	The program will not compile
+e.	The program will print 4
+
+
+32)Predict the output of the below code.
+    class Parent {
+         void method(int a) {
+              System.out.println("ONE");
+         }
+         void method(double d) {
+              System.out.println("TWO");
+         }
+    }
+
+    class Child extends Parent {
+         @Override
+         void method(double d) {
+              System.out.println("THREE");
+         }
+    }
+ 
+    public class Main {   
+         public static void main(String[] args) {
+              new Child().method(100);
+         }
+    }
+A. ONE
+B. TWO
+C. THREE
+D. None of the above
+
+33) Method signature in Java consists of
+A. Method Name, Return Type and Number Of Arguments
+B. Access Modifier, Method Name and Types Of Arguments
+C. Method Name, Number Of Arguments, Types Of Arguments and Order Of Arguments
+D. Return Type, Access Modifier and Order Of Arguments
+
+
+34) Method Overriding shows static polymorphism. True or false?
+A. TRUE
+B. FALSE
+
+
+
+
+
+
+
+
+
+
+
+
+35)
+ Given: 
+10. abstract public class Employee { 
+11. protected abstract double getSalesAmount(); 
+12. public double getCommision() { 
+13. return getSalesAmount() * 0.15; 
+14. } 
+15. } 
+16. class Sales extends Employee { 
+17. // insert method here 
+18. } 
+Which two methods, inserted independently at line 17, correctly 
+complete the Sales class? (Choose two.) 
+A. double getSalesAmount() { return 1230.45; } 
+B. public double getSalesAmount() { return 1230.45; } 
+C. private double getSalesAmount() { return 1230.45; } 
+D. protected double getSalesAmount() { return 1230.45; }
+
+
+
+
+36)
+ Given: 
+1. class TestA { 
+2. public void start() { System.out.println(”TestA”); } 
+3. } 
+4. public class TestB extends TestA { 
+5. public void start() { System.out.println(”TestB”); } 
+6. public static void main(String[] args) { 
+7. ((TestA)new TestB()).start(); 
+8. } 
+9. } 
+What is the result? 
+A. TestA 
+B. TestB 
+C. Compilation fails. 
+D. An exception is thrown at runtime. 
+
+
+
+
+
+
+37)
+ 3. public class Ebb {
+ 4. static int x = 7;
+ 5. public static void main(String[] args) {
+ 6. String s = "";
+ 7. for(int y = 0; y < 3; y++) {
+ 8. x++;
+ 9. switch(x) {
+10. case 8: s += "8 ";
+11. case 9: s += "9 ";
+12. case 10: { s+= "10 "; break; }
+13. default: s += "d ";
+14. case 13: s+= "13 ";
+15. }
+16. }
+17. System.out.println(s); 
+18. }
+19. static { x++; }			//executed ONLY once when class id loaded.it is known as static block
+20. } 
+ What is the result?
+ A. 9 10 d
+ B. 8 9 10 d
+ C. 9 10 10 d
+ D. 9 10 10 d 13
+ E. 8 9 10 10 d 13
+ F. 8 9 10 9 10 10 d 13
+ G. Compilation fails
+
+
+
+38) 
+Given:
+ 3. public class Circles {
+ 4. public static void main(String[] args) {
+ 5. int[] ia = {1,3,5,7,9};
+ 6. for(int x : ia) {
+ 7. for(int j = 0; j < 3; j++) {
+ 8. if(x > 4 && x < 8) continue;
+ 9. System.out.print(" " + x);
+10. if(j == 1) break;
+11. continue;
+12. }
+13. continue;
+14. }
+15. }
+16. }
+ What is the result?
+ A. 1 3 9
+ B. 5 5 7 7 
+ C. 1 3 3 9 9
+ D. 1 1 3 3 9 9
+ E. 1 1 1 3 3 3 9 9 9
+ F. Compilation fails
+
+
+
+
+39) Which of these keywords must be used to monitor for exceptions?
+
+A. finally
+B. throw
+C. catch
+D. try
+
+40) In which of the following package Exception class exist?
+
+A. java.file
+B. java.lang
+C. java.io
+D. java.util
+
+41) public class Main
+{
+        public static void main(String args[])
+	{
+		try
+		{
+			System.out.print("Hello" + 1/0 );
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.print("World");
+		}
+	}
+}
+A. Hello
+B. World
+C. HelloWorld
+D. Hello World
+
+
+42) class Main
+{
+public static void main(String args[])
+	{
+		try
+		{
+			int a, b;
+			b = 0;
+			a = 5 / b;
+			System.out.print("A");
+	    }
+		catch(ArithmeticException e)
+		{
+			System.out.print("B");
+		}
+		finally
+		{
+			System.out.print("C");
+		}
+	}
+}
+
+A. A
+B. B
+C. AC
+D. BC
+
+
+
+
+
+43) Predict the output of the Java code given below
+
+    class MyResource {
+	public void close() {
+		System.out.println("Close in close");
+	}
+    }
+    class Demo {
+	public static void main(String[] arg) {
+	     try(MyResource s = new MyResource()) {
+	          throw new Exception();
+	     }catch(Exception e) {
+		  System.out.println("Close in catch");
+	}
+    }
+A. Close in close
+   Close in catch
+B. Close in catch
+   Close in close
+C. Compilation Error as MyResource does not extend Exception class
+D. Compilation Error as MyResource does not implement AutoCloseable
+
+
+Q44) In Java, which class needs to be extend from to create a Custom Exception 
+    which would be under the category of "Checked" Exception.
+A.  RuntimeException
+B.  Error
+C.  Exception
+D.  CheckedException
+
+Q45) Predict the output of the below Java code.
+    public class Car {
+         public void start() {
+	      try {
+                   System.out.println("Starting up");
+                   throw new Exception();
+              }
+              catch(Exception e) {
+		   System.out.println("Problem occurred");
+                   System.exit(0);
+              }
+              finally {
+          	   System.out.println("Lets walk");
+              }
+         } 
+         public static void main(String arg[]) {
+	     new Car().start();	  
+         }  
+    }
+A. Starting up.
+B. Starting up
+   Problem occurred
+C. Starting up
+   Problem occurred
+   Lets walk
+D. Runtime Error
+
+
+46) Which of these keywords is not a part of exception handling in Java ?
+A. throw
+B. throws
+C. thrown
+D. finally
+
+
+Q47) Predict the output of the below Java code.
+    public class Test{
+         public static void main(String[] args){
+	      try {
+	           int x=0;
+		   int y=50/x;
+		   System.out.print("Division by zero ");
+	      }
+	      catch(ArithmeticException e) {
+			System.out.print("Exception is caught ");
+	      }
+         }
+    }
+A. Division by Zero
+B. Division by zero Exception is caught
+C. Exception is caught
+D. No output as finally block is missing
+
+
+48) What would be the result of the given code snippet ?
+    //required code is present
+    try {
+         method();
+    }
+    catch(RuntimeException e) {  /* catch block 1 */
+         e.printStackTrace();
+    }
+    catch(Exception e) {  /* catch block 2 */
+         e.printStackTrace();
+    }
+    catch(IOException e) { /* catch block 3 */
+         e.printStackTrace();
+    }
+    //required code is present
+A. Compilation Error as multiple catch blocks not allowed
+B. Compilation Error due to sequence of catch block 1 and catch block 2
+C. Compilation Error due to sequence of catch block 2 and catch block 3
+D. Compilation Error as "Checked" Exception and "Unchecked" Exception cant be handled together
+
+
+49)
+Given:
+ 3. class SubException extends Exception { }
+ 4. class SubSubException extends SubException { }
+ 5. 
+ 6. public class CC { void doStuff() throws SubException { } }
+ 7.
+ 8. class CC2 extends CC { void doStuff() throws SubSubException { } }
+ 9.
+10. class CC3 extends CC { void doStuff() throws Exception { } }
+11.
+12. class CC4 extends CC { void doStuff(int x) throws Exception { } }
+13.
+14. class CC5 extends CC { void doStuff() { } }
+ What is the result? (Choose all that apply.)
+ A. Compilation succeeds
+ B. Compilation fails due to an error on line 8
+ C. Compilation fails due to an error on line 10
+ D. Compilation fails due to an error on line 12
+ E. Compilation fails due to an error on line 14
+
+
+50)	try{
+			sout("1");
+	}
+	catch(Exception e){
+				sout("2");
+	}
+	finally{
+					sout("3");
+		try{	
+		    int a = 10/0;
+		}
+		catch(Exception e)
+		{
+						sout("4");
+		}
+	}
+
+a) compiles
+b) 123
+c) 123 exception
+d) compilation error
+e) none of the above
+f) 134
+
+
+51)
+ 3. public class OverAndOver {
+ 4. static String s = "";
+ 5. public static void main(String[] args) {
+ 6. try {
+ 7. s += "1";
+ 8. throw new Exception();
+ 9. } catch (Exception e) { s += "2"; 
+10. } finally { s += "3"; doStuff(); s += "4"; 
+11. }
+12. System.out.println(s);
+13. }
+14. static void doStuff() { int x = 0; int y = 7/x; }
+15. }
+ What is the result?
+ A. 12
+ B. 13
+ C. 123
+ D. 1234
+ E. Compilation fails
+ F. 123 followed by an exception
+ G. 1234 followed by an exception
+ H. An exception is thrown with no other output
+
+52)Given:
+ class Plane {
+  static String s = "-";
+  public static void main(String[] args) {
+    new Plane().s1();
+    System.out.println(s);
+  }
+  void s1() {
+    try { s2(); }
+    catch (Exception e) { s += "c"; }
+  }
+  void s2() throws Exception  {
+    s3();  s += "2";
+    s3();  s += "2b";
+  }
+  void s3() throws Exception {
+    throw new Exception();
+  }
+ }
+ What is the result?
+ A. 
+B. -c
+ C. -c2
+ D. -2c
+ E. -c22b
+ F. -2c2b
+ G. -2c2bc
+ H. Compilation fails
+
+
+53). Which of the following collections are synchronized by nature ?
+A. ArrayList
+B. LinkedList
+C. SynchronizedList
+D. Vector
+
+
+54) What would be the output of the Java code given below ?
+class Demo {
+	public static void main(String[] args) {
+		HashMap<Integer, String> map = new HashMap<>();
+		map.put(1, "A");
+		map.put(1, "B");
+		System.out.println(map.get(1));
+	}
+}
+A. A 
+B. B
+C. Compilation error as duplicates keys not allowed in Map
+D. A B
+
+
+
+55) Which of these methods deletes all the elements from invoking collection?
+a) clear()
+b) reset()
+c) delete()
+d) refresh()
+
+
+
+56) Which of the following interface is used for implementing "natural sorting" algorithm.
+a) Comparable
+b) Comparator
+c) Serializable
+d) None of the above
+
+
+
+57)
+ What is the O/P following code
+import java.util.*;
+ class Dog { int size; Dog(int s) { size = s; } }
+ public class FirstGrade {
+ public static void main(String[] args) {
+ TreeSet<Integer> i = new TreeSet<Integer>();
+ TreeSet<Dog> d = new TreeSet<Dog>();
+ 
+d.add(new Dog(1)); d.add(new Dog(2)); d.add(new Dog(1));
+i.add(1); i.add(2); i.add(1);
+ System.out.println(d.size() + " " + i.size());
+}
+}
+
+ a. 1 2
+ b. 2 2
+ c. Compilation fails
+ d. An exception is thrown at runtime
+
+
+58)What is the output of the following?
+class Magazine {
+private String name;
+public Magazine(String name) {
+this.name = name;
+}
+public int compareTo(Magazine m) {
+return name.compareTo(m.name);
+}
+public String toString() {
+return name;
+}
+}
+public class Newstand {
+public static void main(String[] args) {
+Set<Magazine> set = new TreeSet<>();
+set.add(new Magazine("highlights"));
+set.add(new Magazine("Newsweek"));
+set.add(new Magazine("highlights"));
+System.out.println(set);
+}
+}
+A. highlights
+B. Newsweek
+C. The code does not compile.
+D. The code compiles but throws an exception at runtime.
+
+59)What is O/P?
+TreeMap<String, Integer> map = new TreeMap<>();	
+map.put("three", 3);
+map.put("3", 3);
+map.put("THREE", 3);
+System.out.println(map);
+
+A. {3=3, THREE=3, three=3}
+B. {THREE=3, three=3,3=3}
+C. {three=3, THREE=3,3=3}
+D. compilation error
+E. Exception
+
+60)import java.util.*;
+class UtilitiesTest {
+    public static void main(String[] args) {
+        List < int > intList = new ArrayList < > ();
+        intList.add(10);
+        intList.add(20);
+        System.out.println("The list is: " + intList);
+}
+}
+
+A. It prints the following: The list is: [10, 20] 
+B. It prints the following: The list is: [20, 10] 
+C. It results in a compiler error 
+D. It results in a runtime exception
+61) Which is the mandatory condition to define a functional interface in Java 8?
+(a) The interface MUST have @functionalInterface annotation on top of it
+(b) The interface MUST have only one method
+(c) The interface MUST have only one abstract method
+(d) The interface MUST at least have one method 
+
+
+62) Which annotation is used to declare a functional interface in Java 8?
+a) @FunctionalInterface 
+b) @Interface 
+c) @Lambda 
+d) @Functional 
+
+63) State TRUE OR FALSE
+Is it Mandate to annotate functional interface with @FunctionalInterface?
+
+
+64) Given
+interface A {
+     int aMethod(String s);
+}
+Which of the following are valid statements?
+A. A b = a -> a.length();
+B. A x = y -> {return y;};
+C. A s = "2" -> return Integer.parseInt(s);
+D. A b = (String s) -> 1;
+
+
+65) Lambda expressions in java 8 are based on
+A. Procedural Programming
+B. Functional Programming
+C. Data Programming
+D. All of the Above.
+
+
+66)Which of the following is NOT functional interface 
+a) Comparable
+b) Runnable
+c) Comparator
+d) Serializable
+
+
+
+67) Which of the following is NOT a valid lambda expression?
+A. (Integer j, k) -> 5
+B. (p,q) -> p+q
+C. (Integer x, Integer y) -> x*y
+D. (left,right) -> {return "null";}
+
+
+
+68)
+interface Calculator
+{
+	int add(int i,int j);
+	int substract(int i,int j);
+}
+
+class Test
+{
+	public static void main(String[] args) {
+		Calculator c = (a,b) -> 9;
+		System.out.println(c.add(12, 12));
+	}
+}
+
+A. 24
+B. Exception
+C. Compilation error
+D. None of the above
+
+
+
+
+69)
+Which one of the following abstract methods does not take any argument but returns a value?
+A. The accept() method in java.util.function.Consumer interface 
+
+B. The get() method in java.util.function.Supplier interface 
+
+C. The test() method in java.util.function.Predicate interface 
+
+D. The apply() method in java.util.function.Function interface
+
+
+
+
+70)
+IN which package functional interaces are present?
+A) java.lang
+B) java.util
+C) java.util.function
+D) java.io
+
+
+
+71)
+ Which of the following keywords is used to define a variable in Javascript?
+
+a) var
+b) let
+c) both a,b
+d) None of the above
+
+
+72) Which of the following methods is used to access HTML elements using Javascript?
+a) getElementById()
+b) getElementsByClassName()
+c) both a,b
+d) None of the above
+
+
+
+73) How to declare a constant in JS?
+a) var
+b) let
+c) const
+d) constant
+
+
+74) What will be the output of the following code snippet?
+<script type="text/javascript">
+a = 5 + "9";
+document.write(a);
+</script>
+
+a) Error
+b) 14
+c) 9
+d) 59
+
+
+
+75) What will be the output of the following code snippet?
+	<script type="text/javascript">
+	let arr = [10,40,56];
+	document.write(arr[-1]);
+	</script>
+
+a) Error
+b) undefined
+c) null
+d) None of the above
+
+
+
+
+76) CSS stands for
+a) Cascading Style sheets
+b) Color and style sheets
+c) Combination style sheets
+d) None of the above
+
+
+
+77) In how many ways can CSS be written in?
+a) 1
+b) 2
+c) 3
+d) 4
+
+
+
+
+78)  
+What type of CSS is generally recommended for designing large web pages?
+a) Inline
+b) Internal
+c) External
+d) none of the above
+
+
+
+
+79) Which HTML tag is used to declare internal CSS?
+a) <style> 
+b) <link>
+c) <script>
+d) None of the above
+
+
+
+
+
+80) Which HTML tag is used to declare external CSS?
+a) <style> 
+b) <link>
+c) <script>
+d) None of the above
+
+
+
+
+81)  How can we select an element with a specific ID in CSS?
+a) #
+b) .
+c) &
+d) None of the above
+
+
+
+
+82) Which tag is used to embed javascript inside html?
+a) javascript
+b) embed
+c) link
+d) none of the above
+
+83) What is the O/P?
+<script>
+    let l = [12,20];    
+   l[3] = ['a','b'];	
+console.log(l[2]) 
+</script>
+
+a) undefined
+b) error
+c) null
+d) none of the above
+
+
+
+
+84) What is the O/P?
+<script>
+    const l = [12,20];    
+   l[1] = ['a','b'];	
+  console.log(l[1]);
+</script>
+
+
+a) undefined
+b) error
+c) null
+d) none of the above
+
+
+
+
+85) What is the O/P?
+<script>
+    const l = [12,20];    
+   l = ['a','b'];	
+  console.log(l[1]);
+</script>
+
+
+a) undefined
+b) error
+c) null
+d) none of the above
+
+
+
+86) What is the O/P?
+function hi(a){
+	console.log(a)
+}
+		
+hi();
+
+a) undefined
+b) error
+c) null
+d) none of the above
+
+
+
+87) what is  the O/P?
+let a = 10;
+a = 'hi';
+console.log(a);
+
+a) 10
+b) hi
+c) error
+d) can't predict
+
+
+
+89)
+<script>
+    const l = [12,20,30];
+    l[6]= 90;
+    console.log(l[5])
+console.log(l.length)
+ 
+</script>
+
+a) undefined 4
+b) undefined 6
+c) undefined 7
+d) error
+
+==================================================================================
+
+90)Which is correct lambda?
+a) Runnable r = () -> System.out.println();
+b) Runnable r = () -> {System.out.println()};
+c) Runnable r = () -> 9;
+d) none of the above
+
+
+91)
+ interface I {
+	void print();
+}
+ @FunctionalInterface
+interface J extends I
+{
+}
+
+a) Compiles Fine
+b) Compilation Error 
+c) Exception
+d) None of the above
+92)
+ interface I {
+	default void print()
+	{
+		System.out.println("In I");
+	}
+}
+interface J{
+	default void print()
+	{
+		System.out.println("In J");
+	}
+}
+class A {
+	public void print()
+	{
+		System.out.println("In A");
+	}
+}
+public class B extends A implements I,J{
+	public static void main(String[] args) {
+		B o = new B();
+		o.print();
+	}
+}
+a) In I
+b) Compilation Error 
+c) In J
+d) In A
+93)
+@FunctionalInterface
+public interface T {
+
+	void h();
+	
+	private void j() {}
+	
+	default void k() {}
+	
+	static void m() {}
+}
+a) Compiles Fine
+b) Compilation Error due to method j()
+c) Exception
+d) None of the above
+
+94)
+What is the output of the following application?
+package beach;
+import java.util.function.*;
+class Tourist {
+public Tourist(double distance) {
+this.distance = distance;
+}
+public double distance;
+}
+public class Lifeguard {
+private void saveLife(Predicate<Tourist> canSave, Tourist tourist) {
+System.out.print(canSave.test(tourist) ? "Saved" : "Too far"); // y1
+}
+public final static void main(String... sand) {
+new Lifeguard().saveLife(s -> s.distance<4, new Tourist(2)); // y2
+}
+}
+A. Saved
+B. Too far
+C. The code does not compile because of line y1.
+D. The code does not compile because of line y2.
+
+
+95)
+sealed class A permits B //line1
+{
+}
+non-sealed class B extends A //line2
+{	
+}
+final class C extends A //line3
+{
+}
+
+A)  compilation failed at line 1
+B)  compilation failed at line 2
+C)  compilation failed at line 3
+D)  compiles fine
+
+
+96)
+1. public class SomeException extends Exception { 
+2. } 
+Class A: 
+1. public class A { 
+2. public void doSomething() { } 
+3. } 
+Class B: 
+1. public class B extends A { 
+2. public void doSomething() throws SomeException { } 
+3. } 
+Which is true about the two classes? 
+A. Compilation of both classes will fail. 
+B. Compilation of both classes will succeed. 
+C. Compilation of class A will fail. Compilation of class B will succeed. 
+D. Compilation of class B will fail. Compilation of class A will succeed. 
+
+
+
+97)
+Given: 
+11. class A { 
+12. void process() throws Exception { throw new Exception(); } 
+13. } 
+14. class B extends A { 
+15. void process() { System.out.println(”B”); } 
+16. } 
+17. public static void main(String[] args) { 
+18. new B().process();
+ 19. } 
+What is the result? 
+A. B 
+B. The code runs with no output. 
+C. Compilation fails because of an error in line 12. 
+D. Compilation fails because of an error in line 15. 
+E. Compilation fails because of an error in line 18. 
+
+
+
+98)
+Given:
+class Emu {
+ static String s = "-";
+ public static void main(String[] args) {
+ try {
+ throw new Exception();
+ } catch (Exception e) {
+ try { 
+ try { throw new Exception();
+ } catch (Exception ex) { s += "ic "; }
+ throw new Exception(); } 
+ catch (Exception x) { s += "mc "; }
+ finally { s += "mf "; }
+ } finally { s += "of "; }
+ System.out.println(s);
+} }
+ What is the result?
+ A. -ic of
+ B. -mf of
+ C. -mc mf
+ D. -ic mf of
+ E. -ic mc mf of
+ F. -ic mc of mf
+ G. Compilation fails
+
+
+
+99) Which statements are true about comparing two instances of the same class, given that the 
+equals() and hashCode() methods have been properly overridden? (Choose all that apply.)
+ A. If the equals() method returns true, the hashCode() comparison == might return false
+ B. If the equals() method returns false, the hashCode() comparison == might return true
+ C. If the hashCode() comparison == returns true, the equals() method must return true
+ D. If the hashCode() comparison == returns true, the equals() method might return true
+ E. If the hashCode() comparison != returns true, the equals() method might return true
+
+100) import java.util.List;
+public class Demo
+{
+	public static void main(String[] args) {
+		List<Integer> list = List.of(1, 2);
+		list.add(45);
+		System.out.println(list.size());		
+	}
+}
+
+A. compilation error
+B. 3
+C. Exception
+D. None of the above
+
+101)
+Given:
+ public static void before() {
+  Set set = new TreeSet();
+  set.add("2");
+  set.add(3);
+  set.add("1");
+  Iterator it = set.iterator();
+    while (it.hasNext())
+  System.out.print(it.next() + " ");
+ }
+ Which statements are true?
+ A. The before() method will print 1 2
+ B. The before() method will print 1 2 3
+ C. The before() method will print three numbers, but the order cannot be determined
+ D. The before() method will not compile
+ E. The before() method will throw an exception at runtime
+
+102)
+What would be the output of the code given below ?
+Assume all required classes and interfaces are imported.
+
+public class Test {
+	public static void main(String[] args) {
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(20);
+		list.add(10);
+		list.add(50);
+		Collections.sort(list);
+		list.add(15);
+		System.out.println(list);
+	}
+}
+
+A. [10, 20, 50, 15]
+B. [15, 10, 20, 50]
+C. [10, 15, 20, 50]
+D. [20, 15, 10, 50]
+
+103)
+JUnit is used for what type of software testing for the Java language?		
+		a) Functional Testing
+		b) System Testing
+		c) Unit Testing
+		d) Integration Testing
+
+104)
+JUnit test files are written in files with which file extension?		
+		a) .unit
+		b) .java
+		c) .test
+		d) .junit
+
+105)
+What does the fail() method do in JUnit?		
+		a) Outputs the message “Fail” to the console
+		b) Pauses the test for 1 second
+		c) Throws an assertion error unconditionally
+		d) Calls the default constructor
+
+106)
+Which annotation is used to denote a JUnit test method?		
+		a) @Test
+		b) @TestMethod
+		c) @JTest
+		d) @JUnit
