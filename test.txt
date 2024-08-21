@@ -1634,3 +1634,450 @@ Which annotation is used to denote a JUnit test method?
 		b) @TestMethod
 		c) @JTest
 		d) @JUnit
+
+
+107) What is the purpose of the filter() operation in the Stream API? 
+a) To transform elements by applying a function. 
+b) To remove duplicate elements from the stream. 
+c) To perform an action on each element of the stream. 
+d) To filter elements based on a condition
+
+108) Which of the following is a terminal operation in the Stream API? 
+a) map() 
+b) collect() 
+c) filter() 
+d) distinct() 
+
+109) What is the purpose of the map() operation in the Stream API? 
+a) To remove duplicate elements from the stream. 
+b) To transform elements by applying a function. 
+c) To filter elements based on a condition. 
+d) None of the above
+
+
+110) What is the output of the following Stream operation? 
+Stream.of(1, 2, 3, 4).map(i -> i * 2).collect(Collectors.toList())
+
+a) [1, 2, 3, 4] 
+b) [2, 4, 6, 8] 
+c) [2, 3, 4, 5] 
+d) [1, 3, 5, 7]
+
+
+
+111) The newly introduced Streams API is available in which package of java 8:
+
+a) java.io.streams
+b) java.io.stream
+c) java.util.streams
+d) java.util.stream
+
+
+112) Stream operations in java 8 can be divided into
+
+a) Terminal types
+b) Intermediate types
+c) both a,b
+d) None
+
+
+
+113)  List<String> list = Arrays.asList("banana", "apple", "cherry");
+	  list.stream()
+	      .sorted((s1, s2) -> s1.compareTo(s2))
+	      .forEach(System.out::println);
+
+(a) apple, banana, cherry 
+(b) cherry, banana, apple 
+(c) banana, apple, cherry 
+(d) apple, cherry, banana
+
+
+
+
+114) What is the output of the following program?
+package ai;
+import java.util.function.*;
+public class Android {
+public void wakeUp(Supplier supplier) { // d1
+supplier.get();
+}
+public static void main(String... electricSheep) {
+Android data = new Android();
+data.wakeUp(() -> System.out.print("Program started!")); // d2
+}	
+}
+A. Program started!
+B. The code does not compile because of line d1 only.
+C. The code does not compile because of line d2 only.
+D. The code does not compile because of both lines d1 and d2.
+
+
+
+
+115) List<String> words = Arrays.asList("Peris", "London", "New York", "Sydney", "Washington");
+String result = words.stream()
+                     .filter(w -> w.length() > 10)
+                     .findFirst()
+                     .orElse("none");
+System.out.println(result);
+
+(a) none
+
+(b) Washington
+
+(c) New York
+
+(d) An error is thrown
+
+
+116) Stream<Integer> stream = Stream.of(1, 2, 3, 4, 5); 
+stream.reduce((a, b) -> a + b)
+      .ifPresent(System.out::println);
+
+a) 15
+b) 10
+c) 6
+d) 5
+
+============================================
+
+117) What is the default scope of the Spring Bean?
+a) singleton
+b) prototype
+c) request
+d) session
+
+118) Different ways to configure Spring-based applications?
+a) XML based configuration
+b) Java-based configuration
+c) Annotation based configuration
+d) All of the above
+
+
+119)  What is the purpose of the Spring IoC container? 
+a) To manage the lifecycle of beans and their dependencies 
+b) To handle the configuration of the application 
+c) To provide a caching mechanism for the application 
+d) To provide a security mechanism for the application
+
+
+120) What are Spring stereotype annotations?
+a) @Service
+b) @Controller
+c) @Repository
+d) @Component
+e) All of the above
+
+121) What is the scope to create a new instance every time the bean is requested from the spring container?
+a) singleton
+b) prototype
+c) request
+d) session
+
+122) Which Spring annotation is used to inject the Spring bean?
+a) @Bean
+b) @Autowired
+c) @Service
+d) @Component
+
+
+123)
+Which of the following annotations is used to identify a specific bean of same type if there are many in container?	
+	a) @Qualifier
+	b) @Autowired
+	c) @Bean
+	d) None
+
+124)
+Can we make multiple entries of same bean even if it singleton.
+a) true
+b) false
+
+
+125) Using ApplicationContext singleton Spring Beans are loaded lazily?
+a) true
+b) false
+
+
+126) Which Spring Framework module is used to implement cross-cutting concerns in Spring based-applications?
+a) ORM
+b) AOP
+c) JDBC
+d) None of the above
+
+
+
+127) Which of the follwoing is NOT valid advice type.
+a) Before
+b) After
+c) Around
+d) AfterReturning
+e) AfterThrowing
+f) none of the above
+
+
+128)Given code
+package com;
+@Component
+public class BeanA{}
+package in;
+class Main
+{
+	public static void main(String[] args) 	
+	{	
+		ApplicationContext container = new AnnotationConfigApplicationContext(ApplicationConfiguration.class)
+		BeanA bean = container.getBean(BeanA.class);		
+	}		
+}
+
+To run this code successfully what is the change needed
+a) Add @ComponentScan("in")
+b) remove @Component
+c) Move BeanA class in same package as Main class.
+d) no change
+e) none of the above
+
+============================================================================
+130) JdbcTemplate implements the below design pattern?
+a) Strategy design pattern
+b) Template Design pattern
+c) Singleton design pattern
+d) Decorator design pattern
+
+131)To get the data from client in the form of JSON, we use
+a) @PathVariable
+b) @ResponseBody
+c) @RequestBody
+d) None of the above
+
+132)For creating exception hadler class that will handle all exceptions, the class will be annotated with 
+a) @RestAPIError	
+b) @Exception	
+c) @Controller
+d) @ExceptionHandler
+e) none of the above
+
+133)RestTemplate is used for	
+a)Creating rest end points in a controller	
+b) Making HTML templates in templates folder	
+c) Calling Rest End Points from a client	
+d)Reading the data with the rest request
+
+134)What does JdbcTemplate in Spring JDBC help with?
+a) ORM Mapping
+b) Managing transactions
+c) Reducing boilerplate JDBC code
+d) Object Relational Mapping with Hibernate
+
+135)Which of the following is NOT a responsibility of the RowMapper in Spring JDBC?
+a) Establishing a database connection
+b) Mapping a row of the result set to an object
+c) Handling data type conversions
+d) Returning objects from the mapped rows
+
+136)What does the update() method of JdbcTemplate typically return?
+a) The primary key of the updated record
+b) A boolean indicating success
+c) The number of rows affected
+d) The updated object
+
+137)Which method can be used to query for a single object using JdbcTemplate?
+a) queryForObject()
+b) queryForList()
+c) query()
+d) singleQuery()
+
+138)Spring Boot is used for developing?
+a) Web applications
+b) Distributed applications (Restful web services)
+c) Microservices
+d) All of the above
+
+139)Which Spring annotation is used to create RESTful web services using Spring MVC?
+a) @RestController
+b) @Controller
+c) @Component
+d) @Rest
+
+140) @RestController annotation is a combination of the below two annotations
+a) @Component and @ResponseBody annotations
+b) @Controller and @ResponseBody annotations
+c) @Service and @ResponseBody annotations
+d) None of the above
+
+141) What is the difference between Spring and Spring Boot? 
+a) Spring is a Java framework, while Spring Boot is a Java library 
+b) Spring Boot is an opinionated version of Spring, providing a set of default configurations 
+c) Spring Boot is a lightweight version of Spring, while Spring is a full-featured framework 
+d) Spring Boot is a front-end framework, while Spring is a back-end framework 
+
+142)Which of the following statements is true about Spring AOP (Aspect-Oriented Programming)?
+A. Spring AOP is used for handling exceptions in Spring applications
+B. Spring AOP can only be used with Spring MVC applications
+C. Spring AOP is primarily used for database access and transaction management
+D. Spring AOP allows cross-cutting concerns to be separated from the business logic
+
+143)  Which of the following Spring Boot annotations is used to indicate the main class of a Spring Boot application?
+A. @Component
+B. @Service
+C. @RestController
+D. @SpringBootApplication
+
+
+144) Which of the following techniques help spring to create loose coupled application
+i)	DI
+ii)	Coding to interfaces
+iii)	Both 
+iv)	None
+
+145) Which of the following annotations is used for fetching path parameters
+i)	@RequestParam
+ii)	@PathVariable
+iii)	@RestController
+iv)	None
+
+
+146)How to perform validations in spring
+I)	Use of @Valid annotation and appropriate validation annotation on top of class fields
+II)	Only use of @Valid
+III)	Only use of validation annotation on top of class fields
+IV)	@EnableValidation
+
+147) Spring security Authentication supports 
+i)	In memory 
+ii)	Database 
+iii)	Both 
+iv)	None
+
+148)For building a RESTful Web Services, we need to add
+
+i)	spring-boot-starter-web
+ii)	spring-boot-starter-rest
+iii)	spring-boot-starter-web-rest
+iv)	none
+
+149)@SpringBootApplication is combination of 
+i)	@ComponentScan
+ii)	@EnableAutoConfiguration
+iii)	@Configuration
+iv)	All above
+
+150) Which of the following code snippets demonstrates the correct configuration of a Spring Boot REST Controller?
+a) @RestController
+public class MyController {
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+b) @Controller
+@RequestMapping("/api")
+public class MyController {
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+c) @RestController
+@RequestMapping("/api")
+public class MyController {
+    @RequestMapping("/hello")
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+d) @Controller
+public class MyController {
+    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @ResponseBody
+    public String hello() {
+        return "Hello, World!";
+    }
+}
+
+
+
+151)Which of the following code snippets demonstrates the correct configuration of a Spring Boot application class?
+a) @Configuration
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+
+
+b) @SpringBootApplication
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+
+
+c) @RestController
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+
+
+d) @Component
+public class MyApp {
+    public static void main(String[] args) {
+        SpringApplication.run(MyApp.class, args);
+    }
+}
+
+
+
+152) What are Microservices?		
+A.  A design pattern used primarily in functional programming and object-oriented programming
+B.  Microservices are used to build monolithic architecture
+C. Microservices are a software architectural style in which a large application is built as a collection of small, independent, and scalable services
+D. None of the above
+
+
+153)What is the difference between a monolithic and microservices architecture? 		
+A. Monolithic architecture is a single, large, complex service, while microservices are small, autonomous services. 
+B. Monolithic architecture is a single, small, simple service, while microservices are large, complex services.
+C. Monolithic architecture is a group of small, simple services, while microservices are large, complex services. 
+D. Monolithic architecture is a group of large, complex services, while microservices are small, autonomous services.
+
+
+154)If a Spring Boot application fails to start due to a port conflict,
+what is the typical solution?
+
+a)Change the port in the properties file
+b)Change the server
+c)Update Spring dependencies
+d) none of above
+
+
+
+155)
+Eureka server registers a service with what name ?
+a)name given in application.properties using the property spring.application.name
+b)name of the project
+c)with class name
+d) none of the above
+
+156)
+Which Spring cloud module is used to implement Service Registry and Discovery?		
+A. Spring Cloud Netflix Eureka
+B. Spring Cloud Gateway
+C. Spring Cloud OpenFeign
+D. Spring Cloud Config
+
+157)Default port of Eureka is assumed to be by Client
+		A. 8080
+		B. 8888
+		C. 9090
+		D. 8761
+
+158)Which of the following annotations is used in while creating a Eureka Server application		
+A. @EurekaClient
+B. @EurekaDiscovery
+C. @EurekaServer
+D. @EnableEurekaServer
