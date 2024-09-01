@@ -2081,3 +2081,358 @@ A. @EurekaClient
 B. @EurekaDiscovery
 C. @EurekaServer
 D. @EnableEurekaServer
+
+
+
+
+
+159) Which of the following is used in React.js to increase performance?
+a) Virtual DOM
+b) Original DOM
+c) None of the above
+d) Both a,b
+
+
+160) What is ReactJS?
+a) Server-Side framework
+b) User interface library
+c) both a and b
+d) none of the above
+
+161) How data is passed to components from outside
+a) props
+b) setState
+c) types
+d) None of the above
+
+162) How many elements can a valid react component return?
+a)1
+b)2
+c)3
+d)4
+
+163)  In MVC, what does React.js act as?
+a) Model
+b) View
+c) Controller
+d) None of the above
+
+164) React is a ___________
+a) JavaScript Framweork
+b) Javascript Library
+c) None of the above
+d) both a & b
+
+165) 
+which of the following is NOT ES6 feature?
+a) var
+b) let
+c) const
+d) arrow function
+
+166) JSX stands for __________
+a) JSON XML
+b) Javscript Extension
+c) Javascript XML
+d) None of the above
+
+167) 
+What will be the output of the following code?
+import React, { Component } from 'react';  
+const App = () => {  
+    
+      return(  
+         <div>  
+            <h1 className = "hello" >{25+20}</h1>  
+         </div>  
+      );   
+}  
+export default App;
+
+a) 25
+b) 45
+c) 35
+d) None of the above
+
+
+168) What is the purpose of React state?
+a) To store static data
+b) To store styles
+c) To store dynamic data
+d) None of the above
+
+
+169) How to write variable in JSX?
+a) { }
+b) ( )
+c) []
+d) None of the above
+
+170) What is the purpose of props in React?
+a) To pass styles to the component
+b) To pass data from parent to child component
+c) To pass data from child to parent component
+d) To pass data within the same component
+
+171) What is the purpose of useState hook in React?
+a) To manage state in functional components
+b) To manage side effects in functional components
+c) To manage side effects in class components
+d) None of the above
+
+172)   Which hook is used to add state to functional components in React? 
+a) useState 
+b) useEffect
+c) useContext
+d) useReducer
+
+173) 
+What is the purpose of React Fragments? 
+a) To group multiple components within a single parent component. 
+b) To create reusable CSS styles for React components. 
+c) To optimize the rendering performance of React components.
+d) To handle asynchronous operations in React applications. 
+
+
+174) Everything in react is a ____________
+a) Module
+b) Component
+c) package
+d) class
+
+175) What command is used to start the React local development server?
+a) npm start
+b) npm dev
+c) npm serve
+d) npm run
+
+
+176) What is the default local host port that a React development server uses?
+a) 3000
+b) 4000
+c) 3001
+d) 4001
+
+177) When rendering a list using the JavaScript map() method, what is required for each element rendered?
+a) id
+b) index
+c) key
+d) data
+
+===================================================================
+178) How can you combine the following arrays using the spread operator?
+const array1 = [10,20];
+const array2 = [40,30];
+a) const combined = [array1,array2];
+b) const combined = [...array1,...array2];
+c) const combined = ...array1+ ...array2;
+d) const combined = array1 + array2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+179)  State whether true or false: React.js covers only the view layer of the app.
+a) true
+b) false
+
+180) Using which of the following command can prevent default behaviour(event) at in react?
+a) preventDefault()
+b) avoidDefault()
+c) revokeDefault()
+d) preventByDefault()
+
+181) What are arbitrary inputs of components in react also known as?
+a) element
+b) props
+c) keys
+d) ref
+
+182)  What happens if you render an input element with disabled = {false}?
+a) It will be rendered as enabled
+b) It will be rendered as disabled
+c) It will NOT be rendered 
+d) None of the above
+
+183) Which of the following are two ways to handle data in react?
+a) services and components
+b) state and props
+c) state and services
+d) state and component
+
+184) Which of the following is a correct way to comment in JSX?
+a) {/* */}
+b) //
+c) #
+d) <!--     -->
+
+
+
+
+
+
+
+
+185) Which of the following function is used to change the state of react Class based component?
+a) this.setState()
+b) this.state()
+c) this.setChangeState()
+d) none of the above
+
+
+186) Indetify the error in the following JSX:
+<div>Hello World</div>
+<div>Welcome<div>
+
+a) Missing enclosing tag
+b) Extra closing tag
+c) No Error
+d) None of the above
+
+
+187) A functional component in React is...
+a) A class that extends React.Component
+b) A function that returns a React element
+c) An HTML element
+d) A method inside a class component
+
+
+188) Which of the following is a correct way to define a component's initial state in a class component?
+a) Inside the render() method
+b) Inside the constructor() method
+c) Outside the class definition
+d) None of the above
+
+
+189) In React, what is the role of a key prop in a list of elements?
+a) It helps React identify which items have changed
+b) It specifies the order of elements
+c) It defines the unique style for each item
+d) None of the above
+
+
+190) How are state and props different in React?
+a) State is internal and controlled by the component itself, while props are external and passed to a component
+b) State and props are the same
+c) Props are internal and state is external
+d) State can only be used in functional components
+
+191) Which of the following is true about React components?
+a) They must always be written as ES6 classes
+b) They can only return one root element
+c) They can return multiple root elements
+d) They cannot handle events
+
+
+192) What is the issue in this component definition? 
+ function MyComponent(props)
+{
+	return <h1> {props.title} </h1>
+}
+
+a) Missing import statement for React
+b) Incorrect props usage
+c) Missing return statement
+d) No issue
+
+
+
+193)
+What will be the output of this code snippet?
+
+class MyComponent extends React.Component 
+{
+constructor(props) 
+{
+super(props);
+this.state = { count: 1 };
+}
+render() {
+	return ({this.state.count})
+	}
+ }
+
+
+a) 1
+b) 0
+c) undefined
+d) Error
+
+
+
+
+194) In React, how do you handle form submission?
+
+a) Using a submit button outside the form
+b) By manually updating the DOM
+c) Using an onSubmit event handler in the form element
+d) none of the above
+
+
+195) 
+How do you collect form input values in React?
+a) Using refs to directly access the DOM element
+b) By storing the values in the state on every change
+c) Using document.getElementById()
+d) None of the above
+
+
+
+
+196) What is the correct way to handle a form input change in React?
+a) onChange={(event) => this.setState({value: event.target.value})}
+b) onChange={this.updateValue}
+c) onInput={(event) => this.setState({value: event.target.value})}
+d) None of the above
+
+197) 
+Identify the mistake in this form input:
+<input type="text" onchange={(e) =>{ handleEvent(e) }}
+
+a) The value attribute is incorrect
+b) The type attribute is incorrect
+c) The onchange event handler should be onChange
+d) No change
+
+198)  A class component must extends 
+
+a) extends React.Component
+b) extends React
+c) extends React.Component.All
+d) None of the above
+
+
+
+199) In ES6 – Which keyword is used for class inheritance?
+
+a) extends
+b) extend
+c) inheritance
+d) inheritances 
+
+
+200)In ES6 – How to create object of a class
+
+a) new
+b) create
+c) instantiate
+d) none of the above
+
+
+
+
+
+
+
+
